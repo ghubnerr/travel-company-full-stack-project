@@ -14,7 +14,7 @@ function CurrencyInput({ className, error, errorMessage, ...props }: InputProps)
   );
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex flex-col">
       <_CurrencyInput lang="en-US" className={inputClassName} intlConfig={{ locale: "en-US", currency: "USD" }} {...props} />
       {error && errorMessage && <div className="text-red-500 mt-1 text-xs">{errorMessage}</div>}
     </div>
